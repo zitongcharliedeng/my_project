@@ -5,14 +5,14 @@
     <head>
         <title>zcd | Portfolio</title>
         <style>
-            html {
+            html * {
                 scroll-behavior: smooth;
                 font-size: 100%;
                 color: white;
                 text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                 text-decoration: none;
-                text-align: center;
+                letter-spacing: 0.025ch;
             }
 
             body {
@@ -26,6 +26,11 @@
 
             body>* {
                 width: 80ch;
+                margin: 0.5ch;
+            }
+
+            body>*>* {
+                margin: 2ch;
             }
 
             @media (max-width: 80ch) {
@@ -36,65 +41,172 @@
 
             .frosted-glass {
                 backdrop-filter: blur(0.35ch);
-                background-color: rgba(255, 255, 255, 0.2);
-                border: 0.5ch solid rgba(255, 255, 255, 0.2);
+                background-color: rgba(0, 0, 0, 0.2);
+                border: 0.5ch solid rgba(0, 0, 0, 0.2);
             }
 
-            #details {
+            nav {
                 /* Flexbox layout */
                 display: flex;
+                flex-direction: row;
+                justify-content: space-around;
                 /* text */
                 font-size: 120%;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
             }
         </style>
     </head>
 
     <body>
         <header class="frosted-glass">
-            <section id="details">
-                <p>Zi-Tong Charlie Deng | Software Dev | </p>
-                <a href="https://github.com/zitongcharliedeng"> My GitHub</a>
-                <a href="https://www.linkedin.com/in/zitongcharliedeng">My LinkedIn</a>
-            </section>
             <nav>
-                <a href="#about-section">About Me</a>
-                <a href="#projects-section">Projects</a>
-                <a href="#contact-section">Contact</a>
+                <div id="details">
+                    <p>Zi-Tong Charlie Deng | Software Dev </p>
+                    <a href="https://github.com/zitongcharliedeng"> My GitHub</a>
+                    <a href="https://www.linkedin.com/in/zitongcharliedeng">My LinkedIn</a>
+                </div>
+                <a href="#about">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </nav>
         </header>
 
         <main class="frosted-glass">
-            <section id="about-section">
-                <article>
-                    <h2>About Me</h2>
-                    <p>I am 19.</p>
+            <section>
+                <h2>About Me</h2>
+                <article id="about">
+                    <h2>Personal Statement</h2>
+                    <p>
+                        During my gap year, I taught myself coding and web development (mainly in React and Rails),
+                        now able to develop separate frontend-backend websites on my own, with experience in git,
+                        testing, and agile methodologies such as kanban. I also coded other random projects like a
+                        Chatbot and a Mouse Sensor Rotator, getting familiar with languages like Python and Bash.
+                        After this, I wanted to broaden my skillset, enrolling in courses, such as the Data Science
+                        Bootcamp from HyperionDev (scoring 100%) and a Software Development Traineeship, I also
+                        pursued game development as a hobby, utilizing Godot 4 as my platform of choice. I knew by
+                        then that I wanted a career in tech. Finally, I decided not to go to university. I believe I
+                        can thrive in a hands-on environment, working alongside industry professionals, where I can
+                        be continuously challenged and learn effectively.
+                    </p>
+                </article>
+
+                <h2>Programming Experience</h2>
+                <article id="projects">
+                    <h3>Web Developer Studies</h3>
+                    <ul>
+                        <li>
+                            Made an app with a friend to routinely read a person's Fit-bit biometrics. I gained
+                            experience in solving merge conflicts and 'Kanban' workflow patterns.
+                        </li>
+                        <li>
+                            Created an online store-like website (ft. Google Maps API, secure logins, receipt
+                            printing) with React+Rails API.
+                        </li>
+                        <li>
+                            Created a monolithic (Rails MVC) recipe-sharing website featuring unique user posts,
+                            comments, and ratings.
+                        </li>
+                        <li>
+                            Created a timeline-maker website with support for image uploads, auto-detecting dates,
+                            and MUI visual components.
+                        </li>
+                    </ul>
+
+                    <h3>Miscellaneous</h3>
+                    <ul>
+                        <li>
+                            Created and deployed a Discord Bot which counts the push-ups you and your friends do to
+                            display on a leaderboard (using Python, Pocketbase, Fly.io, Uptimerobot).
+                        </li>
+                        <li>
+                            Made a Linux sensor adjuster to change the acceleration, rotation, and sensitivity of
+                            mouse inputs (Bash and Python).
+                        </li>
+                        <li>
+                            Learning game development in the Godot 4 Engine as a hobby. The scripting language,
+                            GDScript, is very similar to Python.
+                        </li>
+                    </ul>
+
+                    <h3>Bootcamps/Training</h3>
+                    <ul>
+                        <li>
+                            HyperionDev Data Science Bootcamp (score: 100%)
+                            <br>
+                            <a href="https://hyperiondev.com/portfolio/154259">hyperiondev.com/portfolio/154259</a>
+                            <br>
+                            Awaiting university co-certification
+                            <br>
+                            NumPy · Natural Language Processing (NLP) · Data Analysis · Python (Programming
+                            Language) · Data Modeling · Pandas (Software) · Jupyter
+                        </li>
+                        <img
+                            src="https://media.licdn.com/dms/image/D4E2DAQE_776-_YaYbw/profile-treasury-document-cover-images_480/0/1686238449275?e=1686844800&v=beta&t=MfQwoAQjVn9m7aZlnV1HEtghXK3Xy7n4KYKLYTt_Zp4" />
+                        <li>
+                            London Vesta College Software Developer Traineeship (currently enrolled)
+                        </li>
+                    </ul>
+                </article>
+
+                <h2>Education</h2>
+                <article id="education">
+                    <h3>Institution: WILSON'S SCHOOL</h3>
+                    <p>
+                        A-levels (2022)<br>
+                        A* in Maths (Pure, Stats, Mechanics)<br>
+                        A in Further Maths (Pure, Stats, Mechanics)<br>
+                        A* in Physics<br>
+                        A* in Chemistry<br>
+                        Predicted A* in Biology at AS Level. Subject withdrawn.
+                    <div style="overflow: hidden;">
+                        <img
+                            src="https://media.licdn.com/dms/image/C4E2DAQHBTCvEXh87Yw/profile-treasury-image-shrink_1280_1280/0/1677609120971?e=1686844800&v=beta&t=-gYhEGvdyszvXWNhamoxtP_IWsVMILrGMKpiiPw47_o" />
+                        <img src="https://media.licdn.com/dms/image/C4E2DAQEj6rT553SOIA/profile-treasury-image-shrink_1280_1280/0/1677609079733?e=1686844800&v=beta&t=rN97mTJsxt5nWMnfZSSEvEqA2aBmAx-l30d0_Zvm8og"
+                            style="margin: 0% 0% 0% 0%;" />
+                    </div>
+                    </p>
+
+                    <h3>12 GCSES</h3>
+                    <p>All 7-9 (see certificates below)</p>
+
+                    <h2>Work Experience</h2>
+                    <h3>Worked in a team volunteering for Oxfam (2018, 2023)</h3>
+                    <ul>
+                        <li>Managing the till</li>
+                        <li>Serving customers</li>
+                        <li>Cleaning and organizing the store</li>
+                        <li>Taking in donations, pricing, displaying</li>
+                    </ul>
+
+                    <h3>Work part-time at Goko Streetfoods</h3>
+                    <ul>
+                        <li>Ingredient preparation before opening times</li>
+                        <li>Cooking</li>
+                        <li>Menu development/feedback</li>
+                        <li>Hygiene</li>
+                        <li>Customer service (getting orders and serving)</li>
+                        <li>Inventory checking</li>
+                        <li>Effective communication during busy times</li>
+                    </ul>
+
+                    <h2>Hobbies</h2>
+                    <ul>
+                        <li>BJJ/Muay Thai club</li>
+                        <li>Calisthenics</li>
+                        <li>Video/audio editing, drawing, animation</li>
+                        <li>Game development (learning Godot 4)</li>
+                        <li>Online games with friends</li>
+                    </ul>
                 </article>
             </section>
-
-            <section id="projects-section">
-                <article>
-                    <h2>Project 1</h2>
-                    <p>I made Project 1 to help projects project.</p>
-                </article>
-                <article>
-                    <h2>Project 2</h2>
-                    <p>In project 2, I did this and that...</p>
-                </article>
-            </section>
-
-            <section id="contact-section">
-                <article>
-                    <h2>Contact Me</h2>
-                    <p>zitongcharliedeng2003@gmail.com</p>
-                </article>
-            </section>
-
-
-
         </main>
 
-        <footer class="frosted-glass">
-            Footer
+        <footer id="contact" class="frosted-glass">
+            Email me at zitongcharliedeng2003@gmail.com
         </footer>
     </body>
 
