@@ -5,38 +5,73 @@
     <head>
         <title>zcd | Portfolio</title>
         <style>
-            body {
+            html {
+                scroll-behavior: smooth;
                 font-size: 100%;
+                color: white;
+                text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-decoration: none;
+                text-align: center;
             }
 
-            .contact-details {
-                background-color: rgb(16, 99, 34);
+            body {
+                background-image: url("https://cdn.pixabay.com/photo/2017/10/06/10/30/twirl-2822598_640.png");
+                background-size: cover;
+                /* flexbox stuff */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            body>* {
+                width: 80ch;
+            }
+
+            @media (max-width: 80ch) {
+                body>* {
+                    width: 100%;
+                }
+            }
+
+            .frosted-glass {
+                backdrop-filter: blur(0.35ch);
+                background-color: rgba(255, 255, 255, 0.2);
+                border: 0.5ch solid rgba(255, 255, 255, 0.2);
+            }
+
+            #details {
                 /* Flexbox layout */
                 display: flex;
                 /* text */
                 font-size: 120%;
-                color: rgb(50, 255, 135);
-                word-spacing: 1ch;
             }
         </style>
     </head>
 
     <body>
-        <header>
-            afdsfads
-            <section class="contact-details">
+        <header class="frosted-glass">
+            <section id="details">
                 <p>Zi-Tong Charlie Deng | Software Dev | </p>
                 <a href="https://github.com/zitongcharliedeng"> My GitHub</a>
                 <a href="https://www.linkedin.com/in/zitongcharliedeng">My LinkedIn</a>
             </section>
             <nav>
-                NavBar
+                <a href="#about-section">About Me</a>
+                <a href="#projects-section">Projects</a>
+                <a href="#contact-section">Contact</a>
             </nav>
         </header>
 
-        <main>
+        <main class="frosted-glass">
+            <section id="about-section">
+                <article>
+                    <h2>About Me</h2>
+                    <p>I am 19.</p>
+                </article>
+            </section>
 
-            <section class="previous-projects-section">
+            <section id="projects-section">
                 <article>
                     <h2>Project 1</h2>
                     <p>I made Project 1 to help projects project.</p>
@@ -47,10 +82,18 @@
                 </article>
             </section>
 
+            <section id="contact-section">
+                <article>
+                    <h2>Contact Me</h2>
+                    <p>zitongcharliedeng2003@gmail.com</p>
+                </article>
+            </section>
+
+
 
         </main>
 
-        <footer>
+        <footer class="frosted-glass">
             Footer
         </footer>
     </body>
