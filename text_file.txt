@@ -45,3 +45,34 @@ zitongcharliedeng@PCzi-tong:~/projects/london_vesta_college/my_project$ git comm
 
 
 
+zitongcharliedeng@PCzi-tong:~/projects/london_vesta_college/my_project$ git add .
+
+
+
+zitongcharliedeng@PCzi-tong:~/projects/london_vesta_college/my_project$ git commit -m "Create text file with git outputs pasted"
+
+    [main 3a46c29] Create text file with git outputs pasted
+    1 file changed, 47 insertions(+)
+    create mode 100644 text_file.txt
+
+
+
+zitongcharliedeng@PCzi-tong:~/projects/london_vesta_college/my_project$ git log
+
+    commit 3a46c293bd03112c97d4bbb249c0f51163c65735 (HEAD -> main)
+    Author: zitongcharliedeng <zitongcharliedeng2003@gmail.com>
+    Date:   Thu Jun 8 10:20:50 2023 +0300
+
+        Create text file with git outputs pasted
+
+    commit 1f1fe8f647a2a04795018de0592abeb9183025ae
+    Author: zitongcharliedeng <zitongcharliedeng2003@gmail.com>
+    Date:   Thu Jun 8 10:19:37 2023 +0300
+
+        Update index page body
+
+    commit 3e6d964844327895a08853f358b9176b1611815d
+    Author: zitongcharliedeng <zitongcharliedeng2003@gmail.com>
+    Date:   Thu Jun 8 09:55:46 2023 +0300
+
+        Create basic index page
