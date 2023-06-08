@@ -76,3 +76,18 @@ zitongcharliedeng@PCzi-tong:~/projects/london_vesta_college/my_project$ git log
     Date:   Thu Jun 8 09:55:46 2023 +0300
 
         Create basic index page
+
+
+
+zitongcharliedeng@PCzi-tong:~/projects/london_vesta_college/my_project$ git push -u origin main
+
+    Enumerating objects: 12, done.
+    Counting objects: 100% (12/12), done.
+    Delta compression using up to 20 threads
+    Compressing objects: 100% (10/10), done.
+    Writing objects: 100% (12/12), 1.75 KiB | 1.75 MiB/s, done.
+    Total 12 (delta 2), reused 0 (delta 0), pack-reused 0
+    remote: Resolving deltas: 100% (2/2), done.
+    To https://github.com/zitongcharliedeng/my_project.git
+    * [new branch]      main -> main
+    Branch 'main' set up to track remote branch 'main' from 'origin'.
