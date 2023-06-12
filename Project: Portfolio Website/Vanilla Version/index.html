@@ -71,6 +71,42 @@
                 background-color: rgba(0, 0, 0, 0.2);
                 transition: background-color 0.3s ease-in-out;
             }
+
+            textarea {
+                width: 100%;
+                height: 8ch;
+            }
+
+            .justify-content {
+                justify-content: center;
+            }
+
+            /* Transition for input fields */
+            input,
+            textarea {
+                transition: border-color 0.2s ease-in-out;
+                margin: 1ch;
+            }
+
+            /* Animation for submit button */
+            button:hover {
+                animation: pulse 1s infinite;
+            }
+
+            /* Keyframes for button animation */
+            @keyframes pulse {
+                0% {
+                    transform: scale(1);
+                }
+
+                50% {
+                    transform: scale(1.1);
+                }
+
+                100% {
+                    transform: scale(1);
+                }
+            }
         </style>
     </head>
 
@@ -231,7 +267,24 @@
         </main>
 
         <footer id="contact" class="frosted-glass">
-            Email me at zitongcharliedeng2003@gmail.com
+            <h2>Contact</h2>
+            <form>
+                <div class="justify-content">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <br />
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <br />
+                </div>
+                <button type="submit">Submit</button>
+            </form>
         </footer>
     </body>
 
